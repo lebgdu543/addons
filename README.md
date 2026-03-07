@@ -1,4 +1,4 @@
-# Local Converter / P2R3 URL Opener Extension
+# P2R3 Converter Opener Extension
 
 To install this extension locally:
 
@@ -22,7 +22,5 @@ To install this extension locally:
 ### Project Structure
 
 -   `manifest.json`: Configuration for both browsers.
-    
--   `popup.html`: The UI container that embeds the site.
     
 -   `background.js`: Required to keep the extension active/valid across platforms.
