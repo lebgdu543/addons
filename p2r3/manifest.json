@@ -1,6 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Local Converter Tool",
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
   "version": "1.1.0",
   "description": "Quickly open the P2R3 conversion tool in a new tab.",
   "action": {
