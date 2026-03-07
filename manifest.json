@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "P2R3 Converter Quick Access",
+  "version": "1.0.0",
+  "description": "Opens the P2R3 conversion tool in a convenient popup.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Open P2R3 Converter"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "scripts": ["background.js"]
+  },
+  "permissions": [],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "p2r3-converter-popup@example.com",
+      "strict_min_version": "109.0"
+    }
+  }
+}
