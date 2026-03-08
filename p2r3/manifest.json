@@ -13,8 +13,7 @@
     "default_title": "Open P2R3 Converter"
   },
   "background": {
-    "service_worker": "background.js",
-    "scripts": ["background.js"]
+    "service_worker": "background.js"
   },
   "permissions": [
     "tabs"
@@ -29,9 +28,10 @@
     },
     "gecko_android": {
       "strict_min_version": "120.0"
-    },
-    "license": {
+    }
+  },
+  "license": {
     "type": "GPL-2.0",
     "url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
-  },
+  }
 }
