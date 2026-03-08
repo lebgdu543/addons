@@ -13,7 +13,8 @@
     "default_title": "Open P2R3 Converter"
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "scripts": ["background.js"]
   },
   "permissions": [
     "tabs"
