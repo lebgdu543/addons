@@ -2,25 +2,25 @@
 
 To install this extension locally:
 
-1.  **Prepare the Files**: Save the three files provided below into a single folder on your computer.
+1.  **Prepare the Files**: Save the zip file provided on the release into a single folder on your computer.
     
-2.  **Chrome Installation**:
+2.  **Chromium Based Installation**:
     
     -   Go to `chrome://extensions/`.
         
     -   Enable **Developer mode** (top right).
         
-    -   Click **Load unpacked** and select your folder.
+    -   Click **Load unpacked** and select your downloaded zip file according to your browser.
         
-3.  **Firefox Installation**:
+3.  **Firefox Based Installation**:
     
     -   Go to `about:debugging#/runtime/this-firefox`.
         
-    -   Click **Load Temporary Add-on...** and select the `manifest.json` file in your folder.
+    -   Click **Load Temporary Add-on...** and select the `addons-main.zip` file in your folder.
         
 
 ### Project Structure
 
--   `manifest.json`: Configuration for both browsers.
-    
--   `background.js`: Required to keep the extension active/valid across platforms.
+> TODO
+
+Tested on zen browser based on firefox version 148 using Windows 11 Pro (64-bit) Operating System.
