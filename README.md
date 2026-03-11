@@ -13,7 +13,7 @@ switching tabs or closing the popup.
 2. Enable **Developer mode** (top-right toggle)
 3. Click **Load unpacked** → select the `p2r3-converter-extension` folder
 
-### Firefox
+### Zen Beowser > Firefox > Basilisk > Floorp > GNU IceCat > Librewolf > Pale Moon > Waterfox
 1. Navigate to `about:debugging#/runtime/this-firefox`
 2. Click **Load Temporary Add-on** → select `manifest.json` from the folder
    *(Note: temporary add-ons are removed on browser restart; permanent install
