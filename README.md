@@ -8,7 +8,7 @@ switching tabs or closing the popup.
 
 ## Installation (Developer Mode)
 
-### Chrome / Chromium / Edge / Opera / Brave / 
+### Brave > Chromium > Opera > Chrome > Edge > (?safari? who use this? mean it's unavailable for my linux/android phone or linux/windows computer.)
 1. Navigate to `chrome://extensions`
 2. Enable **Developer mode** (top-right toggle)
 3. Click **Load unpacked** → select the `p2r3-converter-extension` folder
