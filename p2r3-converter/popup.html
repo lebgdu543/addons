@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -6,17 +6,19 @@
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     :root{--bg:#0f1117;--surface:#181b26;--surface2:#1e2233;--border:#272b3d;--accent:#5b7cf6;--accent-h:#7c97ff;--success:#3ecf8e;--error:#fc8181;--warning:#f6a623;--text:#e2e8f0;--muted:#64748b}
-    html{min-width:450px;background:var(--bg)}
-    body{width:450px;height:600px;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:13px;display:flex;flex-direction:column;overflow:hidden}
+    html{min-width:400px;background:var(--bg)}
+    body{width:450px;height:520px;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:13px;display:flex;flex-direction:column;overflow:hidden}
     #top-bar{background:var(--surface);border-bottom:1px solid var(--border);padding:9px 12px;display:flex;align-items:center;gap:8px;flex-shrink:0}
     .logo{font-size:18px;flex-shrink:0}
     #drop-zone{flex:1;min-width:0;border:2px dashed var(--border);border-radius:8px;padding:6px 10px;cursor:pointer;display:flex;align-items:center;gap:8px;transition:border-color .15s,background .15s}
     #drop-zone:hover,#drop-zone.drag-over{border-color:var(--accent);background:rgba(91,124,246,.07)}
     #drop-zone.has-file{border-color:var(--success);border-style:solid;background:rgba(62,207,142,.06)}
+    #drop-zone.paste-flash{border-color:var(--accent);background:rgba(91,124,246,.13);transition:none}
     .dz-icon{font-size:18px;flex-shrink:0}
     .dz-body{min-width:0;flex:1}
     .dz-hint{font-size:11px;color:var(--muted);white-space:nowrap}
     .dz-hint b{color:var(--accent)}
+    .dz-hint .sep{margin:0 3px;opacity:.4}
     #file-name{font-size:11px;font-weight:600;color:var(--success);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:none}
     #file-name.on{display:block}
     #btn-pick{flex-shrink:0;padding:6px 11px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:11px;cursor:pointer;white-space:nowrap;display:flex;align-items:center;gap:5px;transition:border-color .15s,background .15s}
@@ -58,7 +60,7 @@
     <div id="drop-zone" role="button" tabindex="0">
       <span class="dz-icon">📂</span>
       <div class="dz-body">
-        <div class="dz-hint">Drop file here or <b>click to browse</b></div>
+        <div class="dz-hint">Drop or <b>browse</b><span class="sep">·</span><b>Ctrl+V</b> to paste</div>
         <div id="file-name"></div>
       </div>
     </div>

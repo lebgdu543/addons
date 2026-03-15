@@ -1,8 +1,8 @@
-﻿{
+{
   "manifest_version": 3,
   "name": "p2r3 Converter",
   "short_name": "Convert",
-  "version": "1.2.0",
+  "version": "1.2.4",
   "description": "File picker + embedded p2r3 converter — all inside the popup.",
   "permissions": ["scripting","declarativeNetRequest","clipboardRead"],
   "host_permissions": ["*://p2r3.github.io/*"],
@@ -52,10 +52,6 @@
     "service_worker": "background.js",
     "type": "classic",
     "scripts": ["background.js"]
-  },
-  "license": {
-    "type": "GPL-2.0",
-    "url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
   },
   "developer": {
     "name": "zwaygo",

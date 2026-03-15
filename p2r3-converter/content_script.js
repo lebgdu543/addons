@@ -1,4 +1,4 @@
-﻿"use strict";
+"use strict";
 (function () {
   if (window.__p2r3V4) return;
   window.__p2r3V4 = true;
