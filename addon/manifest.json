@@ -1,0 +1,71 @@
+﻿{
+  "manifest_version": 3,
+  "name": "p2r3 Converter",
+  "short_name": "Convert",
+  "version": "1.2.0",
+  "description": "File picker + embedded p2r3 converter — all inside the popup.",
+  "permissions": ["scripting","declarativeNetRequest","clipboardRead"],
+  "host_permissions": ["*://p2r3.github.io/*"],
+  "declarative_net_request": {
+    "rule_resources": [{"id":"p2r3_iframe_rules","enabled":true,"path":"rules.json"}]
+  },
+  "content_scripts": [{
+    "matches": ["https://p2r3.github.io/convert/*"],
+    "js": ["content_script.js"],
+    "run_at": "document_idle",
+    "all_frames": true
+  }],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "p2r3 Converter",
+    "default_icon": {"16":"icons/icon16.png","32":"icons/icon32.png","48":"icons/icon48.png","128":"icons/icon128.png"},
+    "theme_icons": [{
+      "light": "icons/icon16.png",
+      "dark": "icons/icon16-dark.png",
+      "size": 16
+    }, {
+      "light": "icons/icon32.png",
+      "dark": "icons/icon32-dark.png",
+      "size": 32
+    }, {
+      "light": "icons/icon48.png",
+      "dark": "icons/icon48-dark.png",
+      "size": 48
+    }, {
+      "light": "icons/icon128.png",
+      "dark": "icons/icon128-dark.png",
+      "size": 128
+    }],
+    "default_area": "menupanel"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "@p2r3-converter.zwaygo",
+      "strict_min_version": "109.0"
+    },
+    "gecko_android": {
+      "strict_min_version": "128.0"
+    }
+  },
+  "icons": {"16":"icons/icon16.png","32":"icons/icon32.png","48":"icons/icon48.png","128":"icons/icon128.png"},
+  "background": {
+    "service_worker": "background.js",
+    "type": "classic",
+    "scripts": ["background.js"]
+  },
+  "license": {
+    "type": "GPL-2.0",
+    "url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
+  },
+  "developer": {
+    "name": "zwaygo",
+    "url": "https://github.com/lebgdu543/"
+  },
+  "author": "zwaygo",
+  "homepage_url": "https://github.com/lebgdu543/addons",
+  "sidebar_action": {
+    "open_at_install": false,
+    "default_icon": {"16":"icons/icon16.png","32":"icons/icon32.png","48":"icons/icon48.png","128":"icons/icon128.png"},
+    "default_panel": "popup.html"
+  }
+}
