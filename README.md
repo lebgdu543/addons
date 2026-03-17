@@ -1,4 +1,4 @@
-# p2r3 Converter — Browser Extension
+# P2R3 Converter Companion — Browser Extension
 
 A cross-browser (Chrome + Firefox) Manifest V3 extension that injects local files
 into the [p2r3 online converter](https://p2r3.github.io/convert/) without ever
@@ -11,7 +11,7 @@ switching tabs or closing the popup.
 ### Brave > Chromium > Opera > Vivaldi > Ungoogled Chromium > Chrome > Edge 
 1. Navigate to `chrome://extensions`
 2. Enable **Developer mode** (top-right toggle)
-3. Click **Load unpacked** → select the `p2r3-converter-extension` folder
+3. Click **Load unpacked** → select the `p2r3-converter-companion-extension` folder
 
 ### Zen Browser > Firefox > Basilisk > Floorp > GNU IceCat > Librewolf > Pale Moon > Waterfox
 1. Navigate to `about:debugging#/runtime/this-firefox`
@@ -124,4 +124,4 @@ a shared data store between the service worker and content script.
 All scripts are loaded from external `.js` files; no `eval` or inline
 `<script>` blocks are used, satisfying MV3's strict CSP.
 
-> Tested on brave browser and opera air browser.
+> Tested on brave, edge, zen browser and opera air.
