@@ -1,4 +1,4 @@
-**P2R3 Converter — File Injection Extension**
+**P2R3 Converter Companion — File Injection Extension**
 
 A productivity extension that eliminates workflow interruptions by injecting local files directly into the [p2r3 online converter](https://p2r3.github.io/convert/) without switching tabs or closing your popup.
 
